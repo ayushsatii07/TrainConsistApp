@@ -1,6 +1,6 @@
 import java.util.HashSet;
 
-public class UC3_TrainApp {
+public class Main {
     public static void main(String[] args) {
 
         System.out.println("=== Train Consist Management App ===");
