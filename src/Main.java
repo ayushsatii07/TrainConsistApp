@@ -1,22 +1,21 @@
-import java.util.HashSet;
+import java.util.LinkedHashSet;
 
 public class Main {
     public static void main(String[] args) {
 
         System.out.println("=== Train Consist Management App ===");
-        System.out.println("UC3: Unique Bogie ID Management\n");
+        System.out.println("UC5: Ordered Unique Bogie Formation\n");
 
-        HashSet<String> bogieIds = new HashSet<>();
+        LinkedHashSet<String> train = new LinkedHashSet<>();
 
-        bogieIds.add("B1");
-        bogieIds.add("B2");
-        bogieIds.add("B3");
-        bogieIds.add("B2");
-        bogieIds.add("B1");
+        train.add("Engine");
+        train.add("Sleeper");
+        train.add("Cargo");
+        train.add("Guard");
 
-        System.out.println("Unique Bogie IDs:");
-        for (String id : bogieIds) {
-            System.out.println(id);
-        }
+        train.add("Sleeper");
+
+        System.out.println("Final Train Formation:");
+        System.out.println(train);
     }
 }
