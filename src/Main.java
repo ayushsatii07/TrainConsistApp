@@ -1,27 +1,22 @@
-import java.util.LinkedList;
+import java.util.HashSet;
 
 public class Main {
     public static void main(String[] args) {
 
         System.out.println("=== Train Consist Management App ===");
-        System.out.println("UC4: LinkedList Bogie Operations\n");
+        System.out.println("UC3: Unique Bogie ID Management\n");
 
-        LinkedList<String> train = new LinkedList<>();
+        HashSet<String> bogieIds = new HashSet<>();
 
-        train.add("Engine");
-        train.add("Sleeper");
-        train.add("AC");
-        train.add("Cargo");
-        train.add("Guard");
+        bogieIds.add("B1");
+        bogieIds.add("B2");
+        bogieIds.add("B3");
+        bogieIds.add("B2");
+        bogieIds.add("B1");
 
-        train.add(2, "Pantry Car");
-
-        train.removeFirst();
-        train.removeLast();
-
-        System.out.println("Final Train Consist:");
-        for (String bogie : train) {
-            System.out.println(bogie);
+        System.out.println("Unique Bogie IDs:");
+        for (String id : bogieIds) {
+            System.out.println(id);
         }
     }
 }
